@@ -21,7 +21,7 @@ This technique involves randomly dividing the dataset into k-groups or folds of 
 
 ## Installation
 
-    pip install simple_kNN
+    pip install simple-kNN
 
 
 #### References
