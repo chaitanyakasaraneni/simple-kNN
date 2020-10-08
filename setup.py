@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(name='simple_kNN',
-      version='0.4',
+      version='0.5',
       description='Simple kNN algorithm with k-Fold Cross Validation',
       author='Chaitanya Krishna Kasaraneni',
       author_email='kc.kasaraneni@gmail.com',
