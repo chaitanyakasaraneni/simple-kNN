@@ -24,5 +24,6 @@ jobs:
       if: ${{ success() && startsWith(github.event.ref, 'refs/tags') }}
       uses: pypa/gh-action-pypi-publish@master
       with:
+        verbose: true
         user: __token__
         password: ${{ secrets.PYPIUPLOAD }}
