@@ -1,7 +1,11 @@
 # simple-kNN
+
+[![pypi](https://img.shields.io/pypi/v/simple-kNN?color=red&label=PyPI&style=for-the-badge)](https://pypi.python.org/pypi/simple-kNN)
+
+
 This repository is for Continuous Integration of my simple k-Nearest Neighbors (kNN) algorithm to pypi package.
 
-For notebook version please visit [this repository]()
+For notebook version please visit [this repository](https://github.com/chaitanyakasaraneni/knnFromScratch)
 
 #### *k*-Nearest Neighbors
 *k*-Nearest Neighbors, kNN for short, is a very simple but powerful technique used for making predictions. The principle behind kNN is to use **“most similar historical examples to the new data.”**
