@@ -17,7 +17,7 @@ if __name__ == "__main__":
             author=metadata["author"],
             author_email='kc.kasaraneni@gmail.com',
             description='Simple kNN algorithm with k-Fold Cross Validation',
-            install_requires=["numpy", "pandas", "scikit-learn"],
+            install_requires=["numpy"],
             long_description=long_description,
             long_description_content_type="text/markdown",
             url="https://github.com/chaitanyakasaraneni/simple-kNN",
