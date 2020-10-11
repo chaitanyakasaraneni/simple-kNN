@@ -8,6 +8,7 @@ from sklearn.metrics import confusion_matrix
 from simple_kNN.distanceMetrics import distanceMetrics
 from simple_kNN.kFoldCV import kFoldCV
 from simple_kNN.kNNClassifier import kNNClassifier
+from simple_kNN.datasets import load_iris
 
 def readData(fileName):
     '''
@@ -43,8 +44,6 @@ def readDatawithoutkfcv(fileName):
 
 # ### Hayes-Roth Data
 
-# In[7]:
-
 print('***** Without KFold Cross Validation *****')
 trainFile = 'Datasets/HayesRoth/hayes-roth.data'
 
@@ -76,7 +75,6 @@ print('***** Confusion Matrix *****')
 print(confusion_matrix(testLabels, eucPredictions))
 # **Create an object for k-Fold cross validation class**
 
-# In[8]:
 print('***** With KFold Cross Validation *****')
 trainData, trainLabel = readData(trainFile)
 
@@ -94,7 +92,6 @@ kfcv = kFoldCV()
 #
 # *kfcv.kFCVEvaluate(data, foldCount, neighborCount, distanceMetric)*
 
-# In[9]:
 print('*'*20)
 print('Hayes Roth Data')
 
@@ -102,23 +99,13 @@ print('Hayes Roth Data')
 kfcv.kFCVEvaluate(trainFeatures, 10, 3, 'euclidean')
 
 
-# In[10]:
-
 
 kfcv.kFCVEvaluate(trainFeatures, 10, 3, 'manhattan')
-
-
-# In[11]:
-
 
 kfcv.kFCVEvaluate(trainFeatures, 10, 3, 'hamming')
 
 
 # ### Car Evaluation Data
-
-# In[12]:
-
-
 carFile = 'Datasets/CarEvaluation/car.data'
 
 carData, carLabel = readData(carFile)
@@ -127,29 +114,16 @@ df = df.apply(preprocessing.LabelEncoder().fit_transform)
 carFeatures = df.values.tolist()
 carLabels = [car[-1] for car in carFeatures]
 
-
-# In[13]:
 print('*'*20)
 print('Car Evaluation Data')
 kfcv.kFCVEvaluate(carFeatures, 10, 3, 'euclidean')
 
-
-# In[14]:
-
-
 kfcv.kFCVEvaluate(carFeatures, 10, 3, 'manhattan')
-
-
-# In[15]:
-
 
 kfcv.kFCVEvaluate(carFeatures, 10, 3, 'hamming')
 
 
 # ### Breast Cancer Data
-
-# In[16]:
-
 print('*'*20)
 print('Breast Cancer Data')
 
@@ -162,20 +136,10 @@ cancerFeatures = cdf.values.tolist()
 cancerLabels = [cancer[-1] for cancer in cancerFeatures]
 
 
-# In[17]:
-
-
 kfcv.kFCVEvaluate(cancerFeatures, 10, 3, 'euclidean')
-
-
-# In[18]:
-
 
 kfcv.kFCVEvaluate(cancerFeatures, 10, 3, 'manhattan')
 
-
-# In[19]:
-
-
 kfcv.kFCVEvaluate(cancerFeatures, 10, 3, 'hamming')
+
 
