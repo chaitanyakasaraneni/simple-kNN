@@ -1,8 +1,0 @@
-include license.txt
-include datasets/data/iris.csv
-include datasets/data/breast_cancer.csv
-include datasets/data/wine_data.csv
-include datasets/data/digits.csv.gz
-recursive-include datasets *
-recursive-include datasets/data/*.csv
-recursive-include datasets/data/*.csv.gz
