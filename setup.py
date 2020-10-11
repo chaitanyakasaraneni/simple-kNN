@@ -21,9 +21,8 @@ if __name__ == "__main__":
             long_description=long_description,
             long_description_content_type="text/markdown",
             url="https://github.com/chaitanyakasaraneni/simple-kNN",
-            packages=['simple_kNN'],
-            package_dir={'simple_kNN':'simple_kNN'},
-            package_data={'simple_kNN': ['dataset/data/*.csv', 'dataset/data/*.csv.gz']},
+            packages=setuptools.find_packages(),
+            include_package_data=True,
             classifiers=[
                 "License :: OSI Approved :: MIT License",
                 "Operating System :: OS Independent",

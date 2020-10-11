@@ -1,0 +1,4 @@
+include license.txt
+recursive-include datasets *
+recursive-include datasets/data/*.csv
+recursive-include datasets/data/*.csv.gz
