@@ -1,7 +1,7 @@
 # simple-kNN
 
 [![pypi](https://img.shields.io/pypi/v/simple-kNN?color=red&label=PyPI&style=for-the-badge)](https://pypi.python.org/pypi/simple-kNN)
-
+[![ci](https://img.shields.io/github/workflow/status/chaitanyakasaraneni/simple-kNN/Continuous%20Integration?&label=Continuous%20Integration&logo=GitHub&style=for-the-badge)](https://pypi.python.org/pypi/simple-kNN)
 
 This repository is for Continuous Integration of my simple k-Nearest Neighbors (kNN) algorithm to pypi package.
 
