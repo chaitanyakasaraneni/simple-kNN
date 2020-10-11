@@ -24,7 +24,6 @@ if __name__ == "__main__":
             packages=['simple_kNN'],
             package_dir={'simple_kNN'},
             package_data={'simple_kNN': ['dataset/data/*.csv', 'dataset/data/*.csv.gz']},
-            packages=setuptools.find_packages(),
             classifiers=[
                 "License :: OSI Approved :: MIT License",
                 "Operating System :: OS Independent",
