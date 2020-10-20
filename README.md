@@ -40,3 +40,7 @@ from simple_kNN.kNNClassifier import kNNClassifier
 - More info on Cross Validation can be seen [here](https://medium.com/datadriveninvestor/k-fold-and-other-cross-validation-techniques-6c03a2563f1e)
 - [kNN](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
 - [kFold Cross Validation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html)
+
+#### Coming soon
+- Other variants of kNN algorithm
+- Recommendations using kNN algorithm
