@@ -1,8 +1,7 @@
-from __future__ import absolute_import
+"""simple_kNN – A from-scratch kNN classifier with k-Fold Cross Validation."""
 
-import numpy as np
-import pandas as pd
-import operator
 from .distanceMetrics import distanceMetrics
 from .kNNClassifier import kNNClassifier
 from .kFoldCV import kFoldCV
+
+__all__ = ["distanceMetrics", "kNNClassifier", "kFoldCV"]
