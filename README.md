@@ -1,11 +1,11 @@
 # simple-kNN
 
-[![PyPI](https://img.shields.io/pypi/v/simple-kNN?color=red&label=PyPI&style=for-the-badge)](https://pypi.org/project/simple-kNN/)
+[![PyPI](https://img.shields.io/pypi/v/simple-kNN?color=green&label=PyPI&style=for-the-badge)](https://pypi.org/project/simple-kNN/)
 [![CI](https://img.shields.io/github/actions/workflow/status/chaitanyakasaraneni/simple-kNN/publish.yml?branch=main&label=Continuous%20Integration&logo=GitHub&style=for-the-badge)](https://github.com/chaitanyakasaraneni/simple-kNN/actions/workflows/publish.yml)
 
 This repository is for Continuous Integration of my simple k-Nearest Neighbors (kNN) algorithm to pypi package.
 
-For notebook version please visit [this repository](https://github.com/chaitanyakasaraneni/knnFromScratch)
+For notebook version, please visit [this repository](https://github.com/chaitanyakasaraneni/knnFromScratch)
 
 #### *k*-Nearest Neighbors
 *k*-Nearest Neighbors, kNN for short, is a very simple but powerful technique used for making predictions. The principle behind kNN is to use **“most similar historical examples to the new data.”**
@@ -15,13 +15,13 @@ For notebook version please visit [this repository](https://github.com/chaitanya
  - Find the distance of the new point to each record of training data
  - Get the k-Nearest Neighbors
  - Making Predictions
-   - For classification problem, the new data point belongs to the class that most of the neighbors belong to. 
-   - For regression problem, the prediction can be average or weighted average of the label of k-Nearest Neighbors
+   - For a classification problem, the new data point belongs to the class that most of the neighbors belong to. 
+   - For a regression problem, the prediction can be an average or weighted average of the labels of k-Nearest Neighbors
 
-Finally, we evaluate the model using *k*-Fold Cross Validation technique
+Finally, we evaluate the model using the *k*-Fold Cross Validation technique
 
 #### *k*-Fold Cross Validation
-This technique involves randomly dividing the dataset into k-groups or folds of approximately equal size. The first fold is kept for testing and the model is trained on remaining k-1 folds.
+This technique involves randomly dividing the dataset into `k` approximately equal-sized groups, or folds. The first fold is kept for testing, and the model is trained on the remaining k-1 folds.
 
 ## Installation
 ```
@@ -42,5 +42,5 @@ from simple_kNN.kNNClassifier import kNNClassifier
 - [kFold Cross Validation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html)
 
 #### Coming soon
-- Other variants of kNN algorithm
-- Recommendations using kNN algorithm
+- Other variants of the kNN algorithm
+- Recommendations using the kNN algorithm
